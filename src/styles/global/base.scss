@@ -15,10 +15,10 @@ html {
     font-family: $f-primary, sans-serif;
     font-size: 18px;
     line-height: 22px;
-    color: $c-font-primary;
-    background-color: $c-bg;
+    color: $c-font-black-primary;
+    background-color: $c-bg-white-primary;
   }
   
   svg {
-    fill: $c-bg-main;
+    fill: $c-font-black-primary;
   }
