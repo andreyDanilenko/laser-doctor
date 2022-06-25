@@ -1,0 +1,23 @@
+@mixin xs-only {
+    @media (max-width: #{$lg - 1px}) {
+      @content;
+    }
+  }
+  
+  @mixin sm {
+    @media (min-width: #{$sm}) {
+      @content;
+    }
+  }
+  
+  @mixin md {
+    @media (min-width: #{$md}) {
+      @content;
+    }
+  }
+  
+  @mixin lg {
+    @media (min-width: #{$lg}) {
+      @content;
+    }
+  }

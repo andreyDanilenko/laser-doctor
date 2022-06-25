@@ -25,22 +25,22 @@ const distPath = 'dist/';
 const path = {
     build: {
         html:   distPath,
-        js:     distPath + "assets/js/",
-        css:    distPath + "assets/css/",
+        js:     distPath + "scripts/",
+        css:    distPath + "styles/",
         images: distPath + "assets/images/",
         fonts:  distPath + "assets/fonts/"
     },
     src: {
         html:   srcPath + "*.html",
-        js:     srcPath + "assets/js/*.js",
-        css:    srcPath + "assets/scss/*.scss",
+        js:     srcPath + "scripts/*.js",
+        css:    srcPath + "styles/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
     },
     watch: {
         html:   srcPath + "**/*.html",
-        js:     srcPath + "assets/js/**/*.js",
-        css:    srcPath + "assets/scss/**/*.scss",
+        js:     srcPath + "scripts/**/*.js",
+        css:    srcPath + "styles/**/*.scss",
         images: srcPath + "assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}",
         fonts:  srcPath + "assets/fonts/**/*.{eot,woff,woff2,ttf,svg}"
     },
@@ -77,7 +77,7 @@ function html(cb) {
 }
 
 function css(cb) {
-    return src(path.src.css, {base: srcPath + "assets/scss/"})
+    return src(path.src.css, {base: srcPath + "styles/"})
         .pipe(plumber({
             errorHandler : function(err) {
                 notify.onError({
@@ -113,7 +113,7 @@ function css(cb) {
 }
 
 function cssWatch(cb) {
-    return src(path.src.css, {base: srcPath + "assets/scss/"})
+    return src(path.src.css, {base: srcPath + "styles/"})
         .pipe(plumber({
             errorHandler : function(err) {
                 notify.onError({
@@ -137,7 +137,7 @@ function cssWatch(cb) {
 }
 
 function js(cb) {
-    return src(path.src.js, {base: srcPath + 'assets/js/'})
+    return src(path.src.js, {base: srcPath + 'scripts/'})
         .pipe(plumber({
             errorHandler : function(err) {
                 notify.onError({
@@ -160,7 +160,7 @@ function js(cb) {
 }
 
 function jsWatch(cb) {
-    return src(path.src.js, {base: srcPath + 'assets/js/'})
+    return src(path.src.js, {base: srcPath + 'scripts/'})
         .pipe(plumber({
             errorHandler : function(err) {
                 notify.onError({
