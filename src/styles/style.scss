@@ -2,6 +2,7 @@
 @import "variables/media.scss";
 @import "variables/colors.scss";
 @import "variables/typography.scss";
+@import "variables/grid.scss";
 
 @import "global/fonts.scss";
 @import "global/reset.scss";
@@ -9,3 +10,7 @@
 
 @import "mixin/media.scss";
 @import "mixin/grid.scss";
+
+
+@import 'blocks/container.scss';
+@import 'blocks/header.scss';
