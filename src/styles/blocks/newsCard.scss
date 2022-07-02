@@ -1,0 +1,22 @@
+.news-card {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  &__separator {
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    background-color: $c-bg-black-primary;
+  }
+  &__text {
+    &_date{
+      color: $c-font-black-secondary;
+      font-size: 12px;
+    }
+    &_title {
+      color: $c-font-black-primary;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+}
