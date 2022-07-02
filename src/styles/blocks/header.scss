@@ -1,0 +1,184 @@
+.header {
+  position: relative;
+
+  &__wrapper {}
+
+  &__logo {
+    padding: 25px 15px;
+  }
+
+  &__logo-img {
+    display: block;
+    width: 219px;
+  }
+
+  &__burger {
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    padding: 0;
+    border: none;
+    width: 36px;
+    height: 36px;
+    background-color: transparent;
+  }
+
+  &__wrapper--closed &__burger {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 0;
+      width: 36px;
+      height: 2px;
+      background-color: $c-font-black-primary;
+      transition: 0.5s;
+      box-shadow: 0 9px 0 0 $c-font-black-primary, 0 18px 0 0 $c-font-black-primary;
+    }
+
+    &:hover::before {
+      transition: 0.5s;
+      background-color: $c-font-black-primary;
+      box-shadow: 0 7px 0 0 $c-font-black-primary, 0 14px 0 0 $c-font-black-primary;
+    }
+  }
+
+  &__wrapper--opened &__nav &__nav-item:nth-child(9) {
+    animation: move 0.9s ease-in;
+  }
+
+  &__wrapper--opened &__nav &__nav-item:nth-child(8) {
+    animation: move 0.8s ease-in;
+  }
+
+  &__wrapper--opened &__nav &__nav-item:nth-child(7) {
+    animation: move 0.7s ease-in;
+  }
+
+  &__wrapper--opened &__nav &__nav-item:nth-child(6) {
+    animation: move 0.6s ease-in;
+  }
+
+  &__wrapper--opened &__nav &__nav-item:nth-child(5) {
+    animation: move 0.5s ease-in;
+  }
+
+  &__wrapper--opened &__nav &__nav-item:nth-child(4) {
+    animation: move 0.4s ease-in;
+  }
+
+  &__wrapper--opened &__nav &__nav-item:nth-child(3) {
+    animation: move 0.3s ease-in;
+  }
+
+  &__wrapper--opened &__nav &__nav-item:nth-child(2) {
+    animation: move 0.2s ease-in;
+  }
+
+  &__wrapper--opened &__nav &__nav-item:nth-child(1) {
+    animation: move 0.1s ease-in;
+  }
+
+  @keyframes move {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  &__wrapper--opened &__burger {
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      right: 0;
+      width: 36px;
+      height: 2px;
+      background-color: $c-font-black-primary;
+    }
+
+    &::before {
+      transition: 0.5s;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transition: 0.5s;
+      transform: rotate(45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $c-font-black-primary;
+    }
+  }
+
+
+  &__info {
+    display: none;
+  }
+
+  &__location {}
+
+  &__location-city {}
+
+  &__location-addresses {}
+
+  &__working {}
+
+  &__working-day {}
+
+  &__working-time {}
+
+  &__nav {
+    transition: 3s;
+  }
+
+  &__wrapper--closed &__nav {
+    display: none;
+  }
+
+  &__nav-list {}
+
+  &__nav-item {}
+
+  &__nav-link {
+    display: block;
+    padding: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 1px solid $c-font-black-primary;
+    color: $c-font-black-primary;
+    font-weight: 500;
+  }
+
+  &__nav-item:last-child &__nav-link {
+    border-bottom: 1px solid $c-font-black-primary;
+  }
+
+  &__contacts {
+    display: none;
+  }
+
+  &__social {}
+
+  &__social-item {}
+
+  &__social-link {}
+
+  &__phone {}
+
+  &__phone-number {}
+
+  &__phpne-button {}
+}

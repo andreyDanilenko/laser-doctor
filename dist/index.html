@@ -17,14 +17,28 @@
 <body>
 
     <header class="header">
-      <div class="header__wrapper">
+      <div class="header__wrapper header__wrapper--opened">
         <div class="header__logo">
-          <img src="/assets/images/logo_1.png" alt="logo" />
+          <img
+            class="header__logo-img"
+            src="/assets/images/logo_1.png"
+            alt="logo"
+          />
         </div>
-        <div class="header__location">
-          <div class="header__location-city"></div>
-          <div class="header__location-time"></div>
+    
+        <button class="header__burger"></button>
+    
+        <div class="header__info">
+          <div class="header__location">
+            <p class="header__location-city">Санкт-Петербург</p>
+            <p class="header__location-addresses">12 адресов</p>
+          </div>
+          <div class="header__working">
+            <p class="header__working-day">без выходных</p>
+            <p class="header__working-time">9:00 до 22:00</p>
+          </div>
         </div>
+    
         <div class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
@@ -56,6 +70,7 @@
             </li>
           </ul>
         </div>
+    
         <div class="header__contacts">
           <ul class="header__social">
             <li class="header__social-item">
@@ -69,8 +84,8 @@
             </li>
           </ul>
           <div class="header__phone">
-             <p class="header__phone-number">+ 7 (812) 409–62–59</p>
-             <button class="header__phpne-button">Перезвоните мне</button>
+            <p class="header__phone-number">+ 7 (812) 409–62–59</p>
+            <button class="header__phpne-button">Перезвоните мне</button>
           </div>
         </div>
       </div>
