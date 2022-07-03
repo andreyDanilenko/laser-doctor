@@ -8,16 +8,19 @@
   padding-top: 25px;
   gap: 16px;
   overflow: hidden;
+
   &__header {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
   }
+
   &__slider-list {
     display: flex;
     flex-wrap: nowrap;
     gap: 30px;
   }
+
   &__slider-item {
     width: 100%;
   }

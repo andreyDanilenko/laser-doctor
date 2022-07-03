@@ -97,6 +97,7 @@
   }
 
   &__wrapper--opened &__burger {
+
     &::before,
     &::after {
       content: "";

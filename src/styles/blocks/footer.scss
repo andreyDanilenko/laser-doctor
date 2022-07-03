@@ -6,11 +6,13 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: $c-bg-lightblue-secondary;
+
   &__img-block {
     display: flex;
     justify-content: center;
     gap: 16px;
   }
+
   &__desc {
     text-align: center;
   }
