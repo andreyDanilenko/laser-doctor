@@ -1,5 +1,7 @@
 .header {
+  width: 100%;
   position: relative;
+  position: absolute;
 
   &__wrapper {}
 
@@ -95,7 +97,6 @@
   }
 
   &__wrapper--opened &__burger {
-
     &::before,
     &::after {
       content: "";
@@ -157,6 +158,7 @@
     padding: 25px;
     text-transform: uppercase;
     text-decoration: none;
+    background: $c-bg-white-primary;
     border-top: 1px solid $c-font-black-primary;
     color: $c-font-black-primary;
     font-weight: 500;
