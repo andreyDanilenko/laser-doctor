@@ -1,0 +1,39 @@
+.news-letter {
+display: flex;
+  flex-flow: column;
+  line-height: 1;
+  &__img {
+    img {
+      display: block;
+      width: 100vw;
+    }
+  }
+  &__main {
+    display: flex;
+    flex-flow: column;
+    background-color: $c-bg-flesh-color;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    gap: 8px;
+  }
+    &__form {
+      display: flex;
+      flex-flow: column;
+      gap: 8px;
+      width: 100%;
+      input {
+        background-color: transparent;
+        border: 1px solid $c-font-black-secondary;
+        padding: 8px 16px;
+        width: 100%;
+      }
+  }
+  &__dest {
+    font-size: 13px;
+    color: $c-font-black-primary;
+  }
+  &__info {
+    font-size: 8px;
+    color: $c-font-black-primary;
+  }
+}

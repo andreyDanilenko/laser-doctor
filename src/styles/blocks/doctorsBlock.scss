@@ -1,0 +1,26 @@
+.doctors-block {
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  gap: 16px;
+  overflow: hidden;
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &__slider-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+  &__slider-item {
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 140px;
+      height: 150px;
+    }
+  }
+}
