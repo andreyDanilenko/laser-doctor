@@ -3,11 +3,24 @@ const btnPrevReview = document.getElementById("prevReview");
 const btnNextReview = document.getElementById("nextReview");
 const sliderCountReview = document.getElementById("sliderCountReview");
 const sliderAmountReview = document.getElementById("sliderAmountReview");
+
 const containerExample = document.querySelector(".example-block");
 const btnPrevExample = document.getElementById("prevExample");
 const btnNextExample = document.getElementById("nextExample");
 const sliderCountExample = document.getElementById("sliderCountExample");
 const sliderAmountExample = document.getElementById("sliderAmountExample");
+
+const containerProcedures = document.querySelector(".procedures-block");
+const btnPrevProcedures = document.getElementById("prevProcedures");
+const btnNextProcedures = document.getElementById("nextProcedures");
+const sliderCountProcedures = document.getElementById("sliderCountProcedures");
+const sliderAmountProcedures = document.getElementById("sliderAmountProcedures");
+
+const containerDoctors = document.querySelector(".doctors-block");
+const btnPrevDoctors = document.getElementById("prevDoctors");
+const btnNextDoctors = document.getElementById("nextDoctors");
+const sliderCountDoctors = document.getElementById("sliderCountDoctors");
+const sliderAmountDoctors = document.getElementById("sliderAmountDoctors");
 const slider = (container, btnPrev, btnNext, count, amount ) => {
     let slidesToShow = 1;
     const slidesToScroll = 1;
@@ -68,4 +81,10 @@ if(containerReview) {
 }
 if (containerExample) {
     slider(containerExample, btnPrevExample, btnNextExample, sliderCountExample, sliderAmountExample);
+}
+if (containerProcedures) {
+    slider(containerProcedures, btnPrevProcedures, btnNextProcedures, sliderCountProcedures, sliderAmountProcedures);
+}
+if (containerDoctors) {
+    slider(containerDoctors, btnPrevDoctors, btnNextDoctors, sliderCountDoctors, sliderAmountDoctors);
 }
