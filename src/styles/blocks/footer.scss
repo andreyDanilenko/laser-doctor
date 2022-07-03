@@ -3,7 +3,8 @@
   flex-flow: column;
   justify-content: center;
   gap: 25px;
-  padding: 50px 16px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: $c-bg-lightblue-secondary;
   &__img-block {
     display: flex;
