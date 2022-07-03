@@ -40,7 +40,6 @@ const slider = (container, btnPrev, btnNext, count, amount ) => {
         sliderActualItem >= slideItemCount ? sliderActualItem = 1 : sliderActualItem++
         const itemsLeft = slideItemCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
         position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
-        console.log(container.clientWidth)
         if (itemsLeft === 0) {
             position += itemWidth * (slideItemCount - slidesToShow);
         }
