@@ -11,6 +11,8 @@
     background-color: transparent;
     padding: 16px;
     border: 1px solid $c-btn-border;
+    color: $c-font-black-primary;
+    text-transform: uppercase;
   }
   &__text {
     &_title {
