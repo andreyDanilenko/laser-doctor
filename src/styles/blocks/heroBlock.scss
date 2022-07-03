@@ -1,0 +1,18 @@
+.hero {
+    &__content {}
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    &__img-wrapper {}
+
+    &__buttons {}
+
+    &__button {
+        display: block;
+        width: 100%;
+    
+    }
+}
