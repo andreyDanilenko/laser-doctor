@@ -1,8 +1,11 @@
 .primary-btn {
+  width: 100%;
   cursor: pointer;
   color: $c-font-black-primary;
   text-transform: uppercase;
   background-color: transparent;
+  font-size: 18px;
+  font-weight: 400;
   padding: 16px;
   border: 1px solid $c-btn-border;
 

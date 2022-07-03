@@ -1,4 +1,6 @@
 .hero {
+    padding-bottom: 20px;
+
     &__content {}
 
     &__img {
@@ -6,13 +8,16 @@
         display: block;
     }
 
+    &__promo {
+        background-color: $c-bg-brown-primary;
+    }
+
     &__img-wrapper {}
 
     &__buttons {}
 
     &__button {
+        margin-top: 20px;
         display: block;
-        width: 100%;
-
     }
 }
