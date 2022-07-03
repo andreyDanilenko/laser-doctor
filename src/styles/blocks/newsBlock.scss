@@ -1,22 +1,11 @@
 .news-block {
-  padding: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   &__separator {
     margin: 16px 0px;
     height: 1px;
     display: flex;
     justify-content: center;
     background-color: $c-bg-black-primary;
-  }
-  &__btn {
-    background-color: transparent;
-    padding: 16px;
-    border: 1px solid $c-btn-border;
-  }
-  &__text {
-    &_title {
-      color: $c-font-black-primary;
-      font-size: 30px;
-      text-transform: uppercase;
-    }
   }
 }

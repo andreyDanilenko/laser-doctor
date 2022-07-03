@@ -90,10 +90,68 @@
       </div>
     </header>
 
-    <main>
-<div class="news-block">
+    <main class="main"><section class="example-block container">
+    <h1 class="example-block__text block-title">до | после</h1>
+    <div class="example-block__slider-list" id="slider-list">
+        <img class="example-block__slider-item slider-item" src="../assets/images/before_after_1.png" alt="">
+        <img class="example-block__slider-item slider-item" src="../assets/images/before_after_1.png" alt="">
+        <img class="example-block__slider-item slider-item" src="../assets/images/before_after_1.png" alt="">
+        <img class="example-block__slider-item slider-item" src="../assets/images/before_after_1.png" alt="">
+    </div>
+    <div class="example-block__footer">
+    <span>контурная пластика</span>
+    <div class="slider-menu">
+        <button class="slider-btn" id="prevExample"><</button>
+        <span id="sliderCountExample">1</span>
+        <span>/</span>
+        <span id="sliderAmountExample">10</span>
+        <button class="slider-btn" id="nextExample">></button>
+    </div>
+    </div>
+</section>
+<section class="review-block container">
+<div class="review-block__header">
+    <h1 class="review-block__text block-title">отзывы</h1>
+    <div class="slider-menu">
+        <button class="slider-btn" id="prevReview"><</button>
+        <span id="sliderCountReview">1</span>
+        <span>/</span>
+        <span id="sliderAmountReview">10</span>
+        <button class="slider-btn" id="nextReview">></button>
+    </div>
+</div>
+    <div class="review-block__slider-list" id="slider-list">
+        <p id="review-item-1" class="review-block__slider-item slider-item">
+            Довелось недавно посетить эту клинику, делала у них лазерную эпиляцию.
+            Перепробовала практически все способы, и на мной взгляд, этот самый эффективный.
+            Сама клиника тоже понравилась. Доктор внимательно отнеслась ко мне и сделала всё достаточно профессионально.
+            По крайней мере, я осталась довольна полученным результатом. Цены абсолютно разумные.
+        </p>
+        <p id="review-item-2" class="review-block__slider-item slider-item">
+            Довелось недавно посетить эту клинику, делала у них лазерную эпиляцию.
+            Перепробовала практически все способы, и на мной взгляд, этот самый эффективный.
+            Сама клиника тоже понравилась. Доктор внимательно отнеслась ко мне и сделала всё достаточно профессионально.
+            По крайней мере, я осталась довольна полученным результатом. Цены абсолютно разумные.
+        </p>
+        <p id="review-item-3" class="review-block__slider-item slider-item">
+            Довелось недавно посетить эту клинику, делала у них лазерную эпиляцию.
+            Перепробовала практически все способы, и на мной взгляд, этот самый эффективный.
+            Сама клиника тоже понравилась. Доктор внимательно отнеслась ко мне и сделала всё достаточно профессионально.
+            По крайней мере, я осталась довольна полученным результатом. Цены абсолютно разумные.
+        </p>
+        <p id="review-item-4" class="review-block__slider-item slider-item">
+            Довелось недавно посетить эту клинику, делала у них лазерную эпиляцию.
+            Перепробовала практически все способы, и на мной взгляд, этот самый эффективный.
+            Сама клиника тоже понравилась. Доктор внимательно отнеслась ко мне и сделала всё достаточно профессионально.
+            По крайней мере, я осталась довольна полученным результатом. Цены абсолютно разумные.
+        </p>
+    </div>
+    <button class="primary-btn" type="submit">все отзывы</button>
+    <button class="primary-btn primary-btn_filled" type="submit">оставить отзыв</button>
+</section>
+<div class="news-block container">
   <div class="news-block__header">
-    <h1 class="news-block__text news-block__text_title">статьи</h1>
+    <h1 class="news-block__text block-title">статьи</h1>
     <div class="news-block__separator" />
   </div>
 
@@ -112,12 +170,12 @@
   <div class="news-card__separator" />
 </div>
 
-  <button class="news-block__btn">все статьи</button>
+  <button class="news-block__btn primary-btn">все статьи</button>
 </div>
 
 </main>
 
-    <footer class="footer">
+    <footer class="footer container">
         <div class="footer__img-block">
             <img src="../assets/images/vk-icon.svg" alt="vkontakte">
             <img src="../assets/images/telegram_icon.svg" alt="telegram">

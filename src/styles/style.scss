@@ -3,10 +3,12 @@
 @import "variables/colors.scss";
 @import "variables/typography.scss";
 @import "variables/grid.scss";
+@import "variables/buttons.scss";
 
 @import "global/fonts.scss";
 @import "global/reset.scss";
 @import "global/base.scss";
+@import "global/sliderMenu.scss";
 
 @import "mixin/media.scss";
 @import "mixin/grid.scss";
@@ -15,6 +17,8 @@
 @import 'blocks/container.scss';
 @import 'blocks/newsCard.scss';
 @import 'blocks/newsBlock.scss';
+@import 'blocks/reviewBlock.scss';
+@import 'blocks/exampleBlock.scss';
 
 
 @import 'blocks/header.scss';

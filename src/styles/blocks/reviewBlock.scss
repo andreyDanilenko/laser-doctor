@@ -1,0 +1,24 @@
+.review-block {
+  display: flex;
+  flex-flow: column;
+  background-color: $c-bg-lightblue-secondary;
+  border-top: 2px solid $c-bg-black-primary;
+  border-bottom: 2px solid $c-bg-black-primary;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  gap: 16px;
+  overflow: hidden;
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  &__slider-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+  }
+  &__slider-item {
+    width: 100%;
+  }
+}
