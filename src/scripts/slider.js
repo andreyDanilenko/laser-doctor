@@ -21,10 +21,7 @@ const btnPrevDoctors = document.getElementById("prevDoctors");
 const btnNextDoctors = document.getElementById("nextDoctors");
 const sliderCountDoctors = document.getElementById("sliderCountDoctors");
 const sliderAmountDoctors = document.getElementById("sliderAmountDoctors");
-const slider = (container, btnPrev, btnNext, count, amount ) => {
-    let slidesToShow = 1;
-    const slidesToScroll = 1;
-    let position = 0;
+
 
 const slider = (container, btnPrev, btnNext, count, amount) => {
   let slidesToShow = 1;
