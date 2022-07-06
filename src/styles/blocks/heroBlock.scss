@@ -9,16 +9,25 @@
     }
 
     &__promo {
+        padding: 24px;
         background-color: $c-bg-brown-primary;
     }
 
     &__title {
-        
+      font-size: 26px;
+      text-transform: uppercase;
+
     }
 
-    &__des {}
+    &__des {
+        margin-top: 15px;
+    }
 
-    &__percent {}
+    &__percent {
+        font-size: 34px;
+        line-height: 38px;
+        margin-left: auto;
+    }
 
     &__img-wrapper {}
 
