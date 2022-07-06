@@ -1,4 +1,46 @@
 .location-item {
+    position: relative;
+    list-style: none;
 
-    
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__address {
+        text-transform: uppercase;
+    }
+
+    &__toggle {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+        border: none;
+
+        &::after,
+        &::before {
+            top: 7px;
+            right: 0;
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 1px;
+            background: $c-bg-black-primary;
+
+        }
+
+        &::after {
+            transform: rotate(90deg);
+        }
+    }
+
+    &__list {
+        margin-top: 10px;
+        display: flex;
+        gap: 5px;
+    }
 }

@@ -1,0 +1,22 @@
+.location-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $c-bg-black-primary;
+    border-radius: 12px;
+    padding: 0 7px;
+    gap: 5px;
+
+    &__dot {
+        display: block;
+        background-color: lightcoral;
+        min-width: 5px;
+        height: 5px;
+        border-radius: 50%;
+    }
+
+    &__address {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+}
